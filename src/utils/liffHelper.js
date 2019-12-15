@@ -16,6 +16,7 @@ class liffHelper {
             resolve();
           },
           err => {
+            alert(`failed to init LIFF. LIFF ID: ${process.env.LIFFID}`)
             console.log('Fail to init LIFF, please run inside LINE only');
             reject();
           }
