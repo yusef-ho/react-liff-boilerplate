@@ -8,7 +8,7 @@ class liffHelper {
     return new Promise((resolve, reject) => {
       if (!isInit) {
         liff.init({
-          liffId: process.env.LIFFID
+          liffId: "1653635376-OQapNLLN"
         },
           data => {
             liffInfo = data;
@@ -16,7 +16,6 @@ class liffHelper {
             resolve();
           },
           err => {
-            alert(`failed to init LIFF. LIFF ID: ${process.env.LIFFID}`)
             console.log('Fail to init LIFF, please run inside LINE only');
             reject();
           }
